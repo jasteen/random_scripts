@@ -4,12 +4,28 @@ import pysam
 from collections import defaultdict
 
 
-files=["S1D0_S1_connor_dedup.bam",
-       "S1D8_S2_connor_dedup.bam",
-       "S1_N_S3_connor_dedup.bam",
-       "S1_T_S4_connor_dedup.bam",
-       "S2D0_S5_connor_dedup.bam",
-       "S2D8_S6_connor_dedup.bam"]
+files=["100000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"100000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"10000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"10000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"20000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"20000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"30000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"30000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"40000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"40000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"50000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"50000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"60000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"60000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"70000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"70000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"80000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"80000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam",
+"90000000_130313_cfDNA_2_capt_2_H5W35BCX2_TGTATGCG_connor_dedup.bam",
+"90000000_130313_cfDNA_capt_2_H5W35BCX2_TACAGGAT_connor_dedup.bam"]
 
 
 final={}
