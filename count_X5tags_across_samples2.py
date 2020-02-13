@@ -55,6 +55,10 @@ for file in files:
     samfile = pysam.AlignmentFile(file, "rb")
     tags = []
 
+    file_short = file.split("/")
+    print file_short[5]
+    print file_short[6]
+
     for line in samfile.fetch():
         t = line.get_tag("X5")
         tags.append(t)
@@ -73,7 +77,7 @@ for file in files:
         else:
             final.update({x:{file: y/2}})
 
-    with open(file + '.counts.txt', 'w') as outf:
+    with open(file_short[5] + '.counts.txt', 'w') as outf:
         for key, value in final.items():
             outf.write(str(key) + "\t")
             for key2 in value:
