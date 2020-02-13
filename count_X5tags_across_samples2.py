@@ -56,8 +56,8 @@ for file in files:
     tags = []
 
     file_short = file.split("/")
-    print file_short[5]
-    print file_short[6]
+    
+    print "working on " + file_short[6]
 
     for line in samfile.fetch():
         t = line.get_tag("X5")
@@ -77,7 +77,7 @@ for file in files:
         else:
             final.update({x:{file: y/2}})
 
-    with open(file_short[5] + '.counts.txt', 'w') as outf:
+    with open(file_short[6] + '.counts.txt', 'w') as outf:
         for key, value in final.items():
             outf.write(str(key) + "\t")
             for key2 in value:
