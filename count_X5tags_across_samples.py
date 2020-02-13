@@ -61,7 +61,7 @@ for file in files:
         tags.append(t)
 
     counts = dict()
-    for i in range(10000):
+    for i in range(1000):
        counts[i] = 0
 
 
@@ -74,7 +74,7 @@ for file in files:
         else:
             final.update({x:{file: y/2}})
 
-#print final
+print final
  
 
 with open('temp.txt', 'w') as outf:
