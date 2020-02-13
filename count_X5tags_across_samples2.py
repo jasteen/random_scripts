@@ -66,7 +66,10 @@ for file in files:
 
 
     for i in tags:
-        counts[i] = counts.get(i, 0) + 1
+     
+       counts[i] = counts.get(i, 0) + 1
+    
+    final{}
 
     for x, y in counts.iteritems():
         if x in final:
