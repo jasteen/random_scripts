@@ -76,23 +76,27 @@ for file in files:
 print final
  
 
-#with open('temp.txt', 'w') as outf:
-#    for key, value in final.items():
-#        outf.write(str(key) + "\t")
-#        for key2 in value:
-#            if final[key][key2] >= 1:
-#                outf.write(str(final[key][key2]) + "\t")
-#            else:
-#                outf.write("0" + "\t")
-#        outf.write("\n")
-
-
 with open('temp.txt', 'w') as outf:
     for key, value in final.items():
+        outf.write(str(key) + "\t")
         for key2 in value:
-            outf.write(str(key2) + "\t")
+            if final[key][key2] >= 1:
+                outf.write(str(final[key][key2]) + "\t")
+            else:
+                outf.write("0" + "\t")
         outf.write("\n")
 
+
+
+with open('temp2.txt', 'w') as outx:
+    for key, value in final.items():
+        outx.write(str(key) + "\t")
+        for key2 in value:
+            if final[key][key2] >= 1:
+                outf.write(str(final[key][key2]) + "\t")
+            else:
+                outx.write("0" + "\t")
+        outx.write("\n")
 
 #for list_item in file_short_list:
 #    for key, value in final.items():
