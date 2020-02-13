@@ -69,7 +69,7 @@ for file in files:
      
        counts[i] = counts.get(i, 0) + 1
     
-    final {}
+    final={}
 
     for x, y in counts.iteritems():
         if x in final:
