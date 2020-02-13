@@ -90,7 +90,7 @@ print final
 with open('temp.txt', 'w') as outf:
     for key, value in final.items():
         for key2 in value:
-            outf.write(str(key2) + "\t")
+            outf.write(str(value) + "\t")
         outf.write("\n")
 
 
