@@ -4,9 +4,9 @@ import pysam
 from collections import defaultdict
 
 
-files=["/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130241-T.bwa.sorted.connor.bam"]
-# "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130244-T.bwa.sorted.connor.bam",
-# "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130248-T.bwa.sorted.connor.bam",
+files=["/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130241-T.bwa.sorted.connor.bam",
+"/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130244-T.bwa.sorted.connor.bam",
+"/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130248-T.bwa.sorted.connor.bam"]
 # "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130248-TP.bwa.sorted.connor.bam",
 # "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130250-T.bwa.sorted.connor.bam",
 # "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130250-TP.bwa.sorted.connor.bam",
@@ -76,14 +76,21 @@ for file in files:
 print final
  
 
+#with open('temp.txt', 'w') as outf:
+#    for key, value in final.items():
+#        outf.write(str(key) + "\t")
+#        for key2 in value:
+#            if final[key][key2] >= 1:
+#                outf.write(str(final[key][key2]) + "\t")
+#            else:
+#                outf.write("0" + "\t")
+#        outf.write("\n")
+
+
 with open('temp.txt', 'w') as outf:
     for key, value in final.items():
-        outf.write(str(key) + "\t")
         for key2 in value:
-            if final[key][key2] >= 1:
-                outf.write(str(final[key][key2]) + "\t")
-            else:
-                outf.write("0" + "\t")
+            outf.write(str(key2) + "\t")
         outf.write("\n")
 
 
