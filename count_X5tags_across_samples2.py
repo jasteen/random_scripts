@@ -46,9 +46,6 @@ files=["/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130241-T.bwa.sorted.conn
 # "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130463-T.bwa.sorted.connor.bam"]
 
 
-final={}
-file_short_list = []
-
 for file in files:
     #file_short = file.split("/")
     #file_short_list.append(file_short[5])
