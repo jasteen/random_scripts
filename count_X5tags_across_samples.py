@@ -91,7 +91,7 @@ with open('temp.txt', 'w') as outf:
 with open('temp2.txt', 'w') as outx:
     for key, value in final.items():
         for key2 in value:
-            outx.write(str(final[0][key2]) + "\t")
+            outx.write(str(final['0'][key2]) + "\t")
         outx.write("\n")
 
 #for list_item in file_short_list:
