@@ -90,12 +90,8 @@ with open('temp.txt', 'w') as outf:
 
 with open('temp2.txt', 'w') as outx:
     for key, value in final.items():
-        outx.write(str(key) + "\t")
         for key2 in value:
-            if final[key][key2] >= 1:
-                outx.write(str(final[key][key2]) + "\t")
-            else:
-                outx.write("0" + "\t")
+            outx.write(str(final[0][key2]) + "\t")
         outx.write("\n")
 
 #for list_item in file_short_list:
