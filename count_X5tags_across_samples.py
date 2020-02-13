@@ -4,9 +4,8 @@ import pysam
 from collections import defaultdict
 
 
-files=["/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130241-T.bwa.sorted.connor.bam",
-"/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130241-TP.bwa.sorted.connor.bam",
-"/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130244-T.bwa.sorted.connor.bam"]
+files=["/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130241-T.bwa.sorted.connor.bam"]
+# "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130244-T.bwa.sorted.connor.bam",
 # "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130248-T.bwa.sorted.connor.bam",
 # "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130248-TP.bwa.sorted.connor.bam",
 # "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130250-T.bwa.sorted.connor.bam",
