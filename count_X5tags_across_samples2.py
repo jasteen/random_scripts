@@ -46,7 +46,7 @@ from collections import defaultdict
 # "/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130463-T.bwa.sorted.connor.bam"]
 
 
-files=["/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130241-T.bwa.sorted.connor.bam"]
+files=["/scratch/uc23/hfettke/cfDNA_BAMs_41/post_connor/130241-TP.bwa.sorted.connor.bam"]
 
 
 for file in files:
